@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Silliy Simple Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+    <body>
+        <button id="GetTime">Time</button><button id="Clear">Clear</button>
+        <div id="results"></div>
+    </body>
+
+</html>
+<script type="text/javascript">
+   
+    $('#GetTime').click(function() {
+        $('#results').prepend(Date() + '<br/>');
+    });
+
+    $('#Clear').click(function() {
+        $('#results').html('');
+    });
+</script>
